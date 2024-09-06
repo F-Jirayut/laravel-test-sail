@@ -85,6 +85,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6.`php artisan migrate`
 
 **if error file_put_contents failed to open stream: Permission denied**
+
 `sudo chmod -R gu+w storage`
 `sudo php artisan cache:clear`
 
