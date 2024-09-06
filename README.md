@@ -66,24 +66,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Step Install
-1.<br>
+<br>
+1.
 ```cp .env.example .env or copy .env.example .env```
-2.<br>
+<br>
+2.
 docker run --rm \
     -u "$(id -u):$(id -g)" \
     -v $(pwd):/var/www/html \
     -w /var/www/html \
     laravelsail/php81-composer:latest \
     composer install --ignore-platform-reqs
-3.<br>
+<br>
+3.
 ```php artisan key:generate```
-4.<br>
+<br>
+4.
 ```docker-compose build```
-5.<br>
+<br>
+5.
 ```docker-compose up```
-6.<br>
+<br>
+6.
 ```php artisan migrate```
-
+<br>
 if error file_put_contents failed to open stream: Permission denied
 ```sudo chmod -R gu+w storage```
 ```sudo php artisan cache:clear```
